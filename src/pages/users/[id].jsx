@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { apiPokedex } from "../../api/api";
+import { apiJsonPlaceholder } from "../../api/api";
 
 import Header from "../../components/Header";
 import CardUsers from "../../components/CardUsers";
@@ -34,7 +34,7 @@ function Profile({ user }) {
 }
 
 export async function getStaticPaths(context) {
-  const response = await apiPokedex.get("/users");
+  const response = await apiJsonPlaceholder.get("/users");
   const users = await response.data.slice(0, 10);
 
   const paths = users.map((user) => {
@@ -49,7 +49,7 @@ export async function getStaticPaths(context) {
 
 // estou destruturando esse paramas lad do getStaticPaths => params
 export async function getStaticProps({ params }) {
-  const response = await apiPokedex.get(`/users/${params.id}`);
+  const response = await apiJsonPlaceholder.get(`/users/${params.id}`);
   const user = await response.data;
   // const user = data.find(f => f.id == context.params.id)
 

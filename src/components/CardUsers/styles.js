@@ -16,7 +16,8 @@ export const Container = styled.div`
   .card {
     width: 300px;
     height: 190px;
-    background-color: #fff;
+    background-color: ${(props) => props.theme.colors.cards};
+    color: #efef;
     display: flex;
     flex-direction: column;
     padding: 16px;

@@ -6,6 +6,7 @@ const theme = {
     red: "#F7776A",
     blue: "#58A9F4",
     green: "#5dbe62",
+    cards: "#686D76"
   },
 };
 

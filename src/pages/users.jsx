@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 
-import { apiPokedex } from "../api/api";
+import { apiJsonPlaceholder } from "../api/api";
 
 import Header from "../components/Header";
 
@@ -34,7 +34,7 @@ function Users({ users }) {
 }
 
 export async function getStaticProps(context) {
-  const response = await apiPokedex.get("/users");
+  const response = await apiJsonPlaceholder.get("/users");
   const data = await response.data;
 
   return {

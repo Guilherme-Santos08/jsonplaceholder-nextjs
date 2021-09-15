@@ -12,25 +12,25 @@ export const Container = styled.div`
     justify-content: center;
     gap: 10px;
     cursor: pointer;
-
+    
     .users {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-
+      
       padding: 16px;
       width: 280px;
       height: 80px;
-
-      background-color: #fff;
-      color: #000;
+      
+      background-color: ${(props) => props.theme.colors.cards};
+      color: #fff;
 
       border-radius: 8px;
       transition: opacity 0.2s ease-in-out;
 
       a {
-        color: #000;
+        color: #fff;
         text-decoration: none;
       }
 
