@@ -32,6 +32,8 @@ export const Container = styled.div`
       a {
         color: #000;
         text-decoration: none;
+        width: 100%;
+        height: 100%;
       }
 
       &:hover {

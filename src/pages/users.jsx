@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Head from "next/head";
+
 import { apiPokedex } from "../api/api";
 
 import Header from "../components/Header";
@@ -9,12 +11,15 @@ function Users({ users }) {
   // console.log(users);
   return (
     <>
+      <Head>
+        <title>Users</title>
+      </Head>
       <Container>
         <Header>Users</Header>
         <div>
           {users.map((e) => (
             <div key={e.id} className="users">
-              <Link href="/profile/[id]" as={`/profile/${e.id}`}>
+              <Link href="/users/[id]" as={`/users/${e.id}`}>
                 <a>
                   <span>{e.name}</span>
                   <span>{e.email}</span>
