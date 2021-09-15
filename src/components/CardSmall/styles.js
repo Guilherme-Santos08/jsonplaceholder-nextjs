@@ -24,8 +24,16 @@ export const Container = styled.div`
   &:hover {
     opacity: 0.8;
   }
-  span {
-    font-weight: bold;
+  a {
     font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: flex-end;
   }
 `;
