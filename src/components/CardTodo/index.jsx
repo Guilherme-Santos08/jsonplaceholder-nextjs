@@ -1,5 +1,3 @@
-// import Link from "next/link";
-
 import { Container } from "./styles.js";
 
 export default function CardTodo({ whatThemeBackground, todoId, todoTitle}) {

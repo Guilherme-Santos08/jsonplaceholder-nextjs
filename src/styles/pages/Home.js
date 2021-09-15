@@ -12,12 +12,8 @@ export const Container = styled.div`
     max-width: 500px;
     margin: 7rem auto;
 
-    .cards__small {
-      display: flex;
-
-      div+ div {
-        margin-left: 10px;
-      }
+    div + div {
+      margin-top: 1rem;
     }
   }
-`
+`;

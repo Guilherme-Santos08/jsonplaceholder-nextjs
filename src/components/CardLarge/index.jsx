@@ -2,11 +2,11 @@ import Link from "next/link";
 
 import { Container } from "./styles.js";
 
-export default function CardLarge() {
+export default function CardSmall({ whatThemeBackground, linkPage }) {
   return (
-    <Container>
-      <Link href="./users">
-      <a>Users</a>
+    <Container whatThemeBackground={whatThemeBackground}>
+      <Link href={`${linkPage}`}>
+        <a>{whatThemeBackground}</a>
       </Link>
     </Container>
   );
